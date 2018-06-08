@@ -30,7 +30,6 @@ def run_video(video_in, video_out):
        
         for box in predictions:
             label, confidence, position = box
-            if label!="traffic light": continue
 
             x, y, w, h = position
             x1, y1 = int(x - w/2), int(y - h/2)
